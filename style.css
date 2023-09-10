@@ -107,3 +107,7 @@ a {
 .footer__item-3 {
     background-image: url(img/game3.jpg);
 }
+
+/* Мобильнвя версия */
+
+@import 'mobile';
