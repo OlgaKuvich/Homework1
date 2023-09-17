@@ -22,6 +22,7 @@ a {
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
+
 }
 
 .top__title {
@@ -120,7 +121,7 @@ a {
     height: 800px;
     display: flex;
     justify-content: space-between;
-    padding-top: 282px;
+    padding-top: 233px;
 }
 
 .seasons-year__box {
@@ -162,4 +163,93 @@ a {
 
 /* Мобильнвя версия */
 
-@import 'mobile'; 
+/*@import 'mobile';*/
+
+@media (max-width: 375px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    } 
+
+    .top {
+        height: 735px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .top__title {
+        font-size: 32px;
+        width: 343px;
+        font-size: 32px;
+        width: 343px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .top__text {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        width: 343px;
+    }
+
+    .top__link-box {
+        margin-top: 0px;  /*  margin: (32px, 53px, 238px, 53px);*/
+    }
+
+    .game {
+        height: 1221px;
+    }
+
+    .game__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .game__item {
+        max-width: 343px;
+        padding-left: 12px;
+    }
+    
+    .seasons-year {
+        max-width: 343px;
+        height: 654px;
+        padding-top: 51px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seasons-year__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+    }
+
+    .seasons-year__title {
+        font-size: 32px;
+
+    }
+
+    .seasons-year__text {
+        font-size: 14px;
+        max-width: 343px;
+        text-align: center;
+    }
+
+    .svg {
+        width: 343px;
+    }
+
+
+}
+  
+
+
+

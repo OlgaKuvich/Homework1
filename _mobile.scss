@@ -10,6 +10,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 32px;
     }
 
     .top__title {
@@ -17,7 +18,8 @@
         width: 343px;
         font-size: 32px;
         width: 343px;
-        padding-top: 238px;
+        text-align: center;
+        padding-top: none;
     }
 
     .top__text {
@@ -28,7 +30,7 @@
     }
 
     .top__link-box {
-        margin: (32px, 53px, 238px, 53px);
+      /*  margin: (32px, 53px, 238px, 53px);*/
     }
 
     .game__box {
