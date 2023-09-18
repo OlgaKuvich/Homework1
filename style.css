@@ -161,13 +161,13 @@ a {
   background: #EB443F;
 }
 
-.picture-mobile {
-  display: none;
+.picture {
+  width: 485px;
+  height: 334px;
 }
 
 /* Мобильнвя версия */
-/*@import 'mobile';*/
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -181,9 +181,6 @@ a {
   }
   .top__title {
     font-size: 32px;
-    width: 343px;
-    font-size: 32px;
-    width: 343px;
     text-align: center;
     margin-bottom: 0px;
   }
@@ -191,7 +188,6 @@ a {
     font-size: 14px;
     line-height: 22px;
     text-align: center;
-    width: 343px;
   }
   .top__link-box {
     margin-top: 0px;
@@ -210,7 +206,6 @@ a {
     padding-left: 12px;
   }
   .seasons-year {
-    max-width: 343px;
     height: 654px;
     padding-top: 51px;
     display: flex;
@@ -220,7 +215,6 @@ a {
     justify-content: flex-start;
   }
   .seasons-year__box {
-    max-width: 343px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,14 +224,11 @@ a {
     font-size: 32px;
   }
   .seasons-year__text {
-    max-width: 343px;
     font-size: 14px;
-    max-width: 343px;
     text-align: center;
   }
   .picture {
-    display: none;
-    /*width: 344px;
-    height: 236px;*/
+    width: 344px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */
