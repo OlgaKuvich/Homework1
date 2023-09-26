@@ -1,9 +1,9 @@
 //Задание 1
 const box = [1, 5, 4, 10, 0, 3];
-
-    for (let i = 0; i < box.length; i++) {
-        if (box[i] == 10) break; 
-        console.log(box[i]);
+    for (let inbox of box) {
+        if (inbox === box[4]) 
+        break; 
+        console.log(inbox);
     }
 
 //Задание 2
@@ -42,13 +42,15 @@ console.log(num2);
 
 //Задание 7
 const play = [9, 8, 7, 6, 5];
-let s = Number(prompt('Введите число'));
-    for (let i of play)
+let s = play.includes(Number(prompt('Введите число')));
+    for (let i of play) {
     if (i === s) {
         alert('Угадал');
+        break
     } else {
         alert('Не угадал');
     }
+}
 
 //Задание 8
 const line = 'abcdef';
@@ -62,10 +64,11 @@ const twoArray = [].concat(...oneArray);
 
 //Задание 10
 const arbitrary = [2, 4, 5, 7, 12, 15];
-for (let i = 0; i < arbitrary.length; i++) {
-    const result = arbitrary[i] + arbitrary[i+1] ; 
+for (let i = 1; i < arbitrary.length; i++) {
+    const result = arbitrary[i] + arbitrary[i - 1] ; 
     console.log(result);
 }
+
 
 //Задание 11
 const square = [2, 4, 5, 7, 12, 15];
@@ -79,7 +82,7 @@ const answer = getLengthWords.map(el => el.length);
 
 //Задание 13
 function filterPositive(array) {
-    return array.filter(item => item < 0)
+    return array.filter(item => item < 0);
   }
   
   filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
