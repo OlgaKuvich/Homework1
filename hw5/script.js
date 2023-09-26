@@ -52,33 +52,20 @@ function numberCube() {
 
 //Задание 4
 
-let age = prompt("Сколько Вам лет?");
+function printMessage() {
 
-let printMessage;  
-
-if (age < 12) {
-
-    printMessage = function () {
-        console.log("Привет, друг!");
-    }
+    let age = prompt("Сколько Вам лет?");
 
     if (age < 0) {
-
-        printMessage = function () {
-            console.log("Вы ввели неправильное значение!");
-        }
-
-    } 
-
-} 
-    else {
-
-        printMessage = function () {
+        console.log("Вы ввели неправильное значение!");
+    
+    }  else if (age <= 12) {
+        console.log("Привет, друг!");
+    
+        } else {
             console.log("Добро пожаловать!");
-        }
-
-}
-
+       }
+    }
 printMessage();
 
 //Задание 5
@@ -87,13 +74,13 @@ let e = Number(prompt('Введите первое число'));
 let f = Number(prompt('Введите второе число'));
 
 function result() {
-    if (!isNaN(e, f)) {
-        console.log(e * f);
+    if (!isNaN(e) || !isNaN(f)) {
+    console.log(e * f);  
 
     } else {
-            console.log('Одно или оба значения не являются числом');
-        }
-    }   
+    console.log('Одно или оба значения не являются числом');
+    }  
+} 
     result();
 
 //Задание 6
