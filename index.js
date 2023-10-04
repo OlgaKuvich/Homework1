@@ -1,6 +1,7 @@
-let monthNumber = Number(prompt('Введите число от 1 до 12'));
+
     
-    function result() {
+function seasonsYear() {
+        let monthNumber = Number(prompt('Введите число от 1 до 12'));
         if (monthNumber === 1 || monthNumber === 2 || monthNumber === 12) {
             alert('Это зима');
 
@@ -17,8 +18,8 @@ let monthNumber = Number(prompt('Введите число от 1 до 12'));
                 alert('Такого месяца не существует!');
             }
         }
-    result();
-    
+seasonsYear();
+
 
 function gameFruits() {
     
@@ -47,4 +48,4 @@ function gameFruits() {
     
     }
     
-    gameFruits();
+gameFruits();
