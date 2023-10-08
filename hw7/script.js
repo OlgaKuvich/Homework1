@@ -11,7 +11,7 @@ const searchStart = (arr, string) => {
 
     arr.forEach((element) => {
         
-        if (element.toLowerCase().includes(string.toLowerCase())) {
+        if (element.toLowerCase().startsWith(string.toLowerCase())) {
             search.push(element);
         }
     });
@@ -35,10 +35,10 @@ console.log(Math.min(52, 53, 49, 77, 21, 32));
 
 //Задача № 5 
 
-function rand() {
-    console.log(Math.random());
-};
-rand();
+function rand(minValue, maxValue) {
+    return Math.round(Math.random() * (maxValue - minValue)) + minValue;
+}
+console.log(rand(1, 10));
 
 //Задача № 6 
 
@@ -50,8 +50,9 @@ const getRandomArrNumbers = (numbers) => {
     const newArray = [];
     for (let i = 0; newArray.length < Math.floor(numbers / 2); i++) {
         newArray.push(array(0, numbers));
+
     }
-    console.log(newArray);        
+    return newArray;        
     }
 
 getRandomArrNumbers(7);
@@ -70,10 +71,10 @@ console.log(day);
 
 //Задача № 10
 
-const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
 
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+const months = ["января", "февраля", "марта", "апреля", "мая", "июня",
+"июля", "августа", "сентября", "октября", "ноября", "декабря"];
     let myDate = new Date(); 
     let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()]; 
     console.log(fullDate); 
