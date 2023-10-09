@@ -36,7 +36,7 @@ console.log(Math.min(52, 53, 49, 77, 21, 32));
 //Задача № 5 
 
 function rand(minValue, maxValue) {
-    return Math.round(Math.random() * (maxValue - minValue)) + minValue;
+    return Math.floor(Math.random() * (maxValue - minValue)) + 1;
 }
 console.log(rand(1, 10));
 
@@ -45,15 +45,14 @@ console.log(rand(1, 10));
 const getRandomArrNumbers = (numbers) => {
     const array = (min, max) => {
         let rando = min + Math.random() * ((max + 1 - min));
-        console.log(Math.floor(rando));
+        return Math.floor(rando);
     }
     const newArray = [];
     for (let i = 0; newArray.length < Math.floor(numbers / 2); i++) {
         newArray.push(array(0, numbers));
-
     }
     return newArray;        
-    }
+}
 
 getRandomArrNumbers(7);
 getRandomArrNumbers(12); 
