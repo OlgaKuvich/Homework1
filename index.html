@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <section class="top center">
+        <h1 class="top__title">Добро пожаловать на мой сайт !</h1>
+        <p class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай поехали и приступай</p>
+            <div class="top__link-box">
+                <a class="link" href="#">Поехали!</a>
+            </div>
+    </section>
+    <section class="game center">
+        <div class="game__box">
+            <div class="game__item game__item-1">Игра 1</div>
+            <div class="game__item game__item-2">Игра 2</div>
+            <div class="game__item game__item-3">Игра 3</div>
+        </div>
+    </section>
+    <section class="play center">
+        <div class="play__box">
+            <h2 class="play__title">Времена года</h2>
+            <p class="play__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <button class="play__btn" onclick="seasonsYear()">Играть!</button>  
+           
+        </div>
+        <img src="img/game_night.png" alt="Картинка" class="picture">
+    </section>
+    <section class="play center">
+        <img src="img/game_fruit.png" alt="Картинка" class="picture">
+        <div class="play__box">
+            <h2 class="play__title">Запомни слова </h2>
+            <p class="play__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <button class="play__btn" onclick="gameFruits()">Играть!</button>  
+        </div>
+    </section>
+    <script src="index.js"></script>
 </body>
 </html>
